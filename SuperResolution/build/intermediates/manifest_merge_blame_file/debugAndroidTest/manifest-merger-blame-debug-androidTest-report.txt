@@ -1,0 +1,34 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.quicinc.superresolution.test" >
+4
+5    <uses-sdk
+5-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:5:5-74
+6        android:minSdkVersion="30"
+6-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:5:15-41
+7        android:targetSdkVersion="34" />
+7-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:5:42-71
+8
+9    <instrumentation
+9-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:11:5-15:77
+10        android:name="androidx.test.runner.AndroidJUnitRunner"
+10-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:11:22-76
+11        android:functionalTest="false"
+11-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:14:22-52
+12        android:handleProfiling="false"
+12-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:13:22-53
+13        android:label="Tests for com.quicinc.superresolution"
+13-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:15:22-75
+14        android:targetPackage="com.quicinc.superresolution" />
+14-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:12:22-73
+15
+16    <application
+16-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:7:5-9:19
+17        android:debuggable="true"
+18        android:extractNativeLibs="false" >
+19        <uses-library android:name="android.test.runner" />
+19-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:8:9-60
+19-->/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest9087858773777669119.xml:8:23-57
+20    </application>
+21
+22</manifest>

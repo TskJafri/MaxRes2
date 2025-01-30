@@ -1,0 +1,253 @@
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:6: Warning: The Google Play store has a policy that limits usage of MANAGE_EXTERNAL_STORAGE [ScopedStorage]
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScopedStorage":
+   Scoped storage is enforced on Android 10+ (or Android 11+ if using
+   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+   no longer provide write access to all files; it will provide the equivalent
+   of READ_EXTERNAL_STORAGE instead.
+
+   As of Android 13, if you need to query or interact with MediaStore or media
+   files on the shared storage, you should be using instead one or more new
+   storage permissions:
+   * android.permission.READ_MEDIA_IMAGES
+   * android.permission.READ_MEDIA_VIDEO
+   * android.permission.READ_MEDIA_AUDIO
+
+   and then add maxSdkVersion="33" to the older permission. See the developer
+   guide for how to do this:
+   https://developer.android.com/about/versions/13/behavior-changes-13#granula
+   r-media-permissions
+
+   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+   it is rarely necessary and most apps on Google Play are not allowed to use
+   it. Most apps should instead migrate to use scoped storage. To modify or
+   delete files, apps should request write access from the user as described
+   at https://goo.gle/android-mediastore-createwriterequest.
+
+   To learn more, read these resources: Play policy:
+   https://goo.gle/policy-storage-help Allowable use cases:
+   https://goo.gle/policy-storage-usecases
+
+   https://goo.gle/android-storage-usecases
+
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:23: Warning: Expecting android:screenOrientation="unspecified" or "fullSensor" for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices [LockedOrientationActivity]
+        android:screenOrientation="portrait"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "LockedOrientationActivity":
+   The <activity> element should not be locked to any orientation so that
+   users can take advantage of the multi-window environments and larger
+   screens available on Android. To fix the issue, consider declaring the
+   corresponding activity element with `screenOrientation="unspecified"or
+   "fullSensor"` attribute.
+
+   https://developer.android.com/topic/arc/window-management
+
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/java/com/quicinc/superresolution/MainActivity.java:269: Warning: Unnecessary; SDK_INT is always >= 30 [ObsoleteSdkInt]
+                if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/drawable-v24: Warning: This folder configuration (v24) is unnecessary; minSdkVersion is 30. Merge all the resources in this folder into drawable. [ObsoleteSdkInt]
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/mipmap-anydpi-v26: Warning: This folder configuration (v26) is unnecessary; minSdkVersion is 30. Merge all the resources in this folder into mipmap-anydpi. [ObsoleteSdkInt]
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/values-night/themes.xml:14: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+                                            ~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/values/themes.xml:15: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+                                            ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/values/colors.xml:5: Warning: The resource R.color.purple_200 appears to be unused [UnusedResources]
+    <color name="purple_200">#FFBB86FC</color>
+           ~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/values/colors.xml:6: Warning: The resource R.color.purple_500 appears to be unused [UnusedResources]
+    <color name="purple_500">#FF6200EE</color>
+           ~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/values/colors.xml:7: Warning: The resource R.color.purple_700 appears to be unused [UnusedResources]
+    <color name="purple_700">#FF3700B3</color>
+           ~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/values/colors.xml:8: Warning: The resource R.color.teal_200 appears to be unused [UnusedResources]
+    <color name="teal_200">#FF03DAC5</color>
+           ~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/values/colors.xml:9: Warning: The resource R.color.teal_700 appears to be unused [UnusedResources]
+    <color name="teal_700">#FF018786</color>
+           ~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/values/colors.xml:10: Warning: The resource R.color.black appears to be unused [UnusedResources]
+    <color name="black">#FF000000</color>
+           ~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/mipmap-anydpi-v26/ic_launcher.xml:2: Warning: The resource R.mipmap.ic_launcher appears to be unused [UnusedResources]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/drawable-v24/ic_launcher_foreground.xml:1: Warning: The resource R.drawable.ic_launcher_foreground appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/values/themes.xml:5: Warning: The resource R.style.Theme_Enhancement appears to be unused [UnusedResources]
+    <style name="Theme.Enhancement" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+           ~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/drawable/super_resolution_icon.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+
+   Explanation for issues of type "IconLauncherShape":
+   According to the Android Design Guide
+   (https://d.android.com/r/studio-ui/designer/material/iconography) your
+   launcher icons should "use a distinct silhouette", a "three-dimensional,
+   front view, with a slight perspective as if viewed from above, so that
+   users perceive some depth."
+
+   The unique silhouette implies that your launcher icon should not be a
+   filled square.
+
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml:2: Warning: The application adaptive roundIcon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   If android:roundIcon and android:icon are both in your manifest, you must
+   either remove the reference to android:roundIcon if it is not needed; or,
+   supply the monochrome icon in the drawable defined by the android:roundIcon
+   and android:icon attribute.
+
+   For example, if android:roundIcon and android:icon are both in the
+   manifest, a launcher might choose to use android:roundIcon over
+   android:icon to display the adaptive app icon. Therefore, your themed
+   application iconwill not show if your monochrome attribute is not also
+   specified in android:roundIcon.
+
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/drawable/super_resolution_icon.png: Warning: Found bitmap drawable res/drawable/super_resolution_icon.png in densityless folder [IconLocation]
+
+   Explanation for issues of type "IconLocation":
+   The res/drawable folder is intended for density-independent graphics such
+   as shapes defined in XML. For bitmaps, move it to drawable-mdpi and
+   consider providing higher and lower resolution versions in drawable-ldpi,
+   drawable-hdpi and drawable-xhdpi. If the icon really is density independent
+   (for example a solid color) you can place it in drawable-nodpi.
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/layout/main_activity.xml:124: Warning: Missing contentDescription attribute on image [ContentDescription]
+        <ImageView
+         ~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, set their descriptions to
+   @null. If your app's minSdkVersion is 16 or higher, you can instead set
+   these graphical elements' android:importantForAccessibility attributes to
+   no.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/java/com/quicinc/superresolution/MainActivity.java:173: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            inferenceTimeView.setText("-- ms");
+                                      ~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/java/com/quicinc/superresolution/MainActivity.java:174: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            predictionTimeView.setText("-- ms");
+                                       ~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/java/com/quicinc/superresolution/MainActivity.java:225: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        inferenceTimeView.setText("-- ms");
+                                  ~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/java/com/quicinc/superresolution/MainActivity.java:226: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        predictionTimeView.setText("-- ms");
+                                   ~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/java/com/quicinc/superresolution/MainActivity.java:318: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                inferenceTimeView.setText(inferenceTimeText + " ms");
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/java/com/quicinc/superresolution/MainActivity.java:318: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                inferenceTimeView.setText(inferenceTimeText + " ms");
+                                                              ~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/java/com/quicinc/superresolution/MainActivity.java:319: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                predictionTimeView.setText(predictionTimeText + " ms");
+                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/java/com/quicinc/superresolution/MainActivity.java:319: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                predictionTimeView.setText(predictionTimeText + " ms");
+                                                                ~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/layout/main_activity.xml:25: Warning: Hardcoded string "Super Resolution", should use @string resource [HardcodedText]
+            android:text="Super Resolution"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/layout/main_activity.xml:47: Warning: Hardcoded string "Image", should use @string resource [HardcodedText]
+            android:text="Image"
+            ~~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/layout/main_activity.xml:82: Warning: Hardcoded string "CPU Only", should use @string resource [HardcodedText]
+            android:text="CPU Only"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/layout/main_activity.xml:95: Warning: Hardcoded string "All Hardware", should use @string resource [HardcodedText]
+            android:text="All Hardware"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/layout/main_activity.xml:107: Warning: Hardcoded string "Run Model", should use @string resource [HardcodedText]
+        android:text="Run Model"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/layout/main_activity.xml:135: Warning: Hardcoded string "-- ms", should use @string resource [HardcodedText]
+        android:text="-- ms"
+        ~~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/layout/main_activity.xml:148: Warning: Hardcoded string "-- ms", should use @string resource [HardcodedText]
+        android:text="-- ms"
+        ~~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/layout/main_activity.xml:165: Warning: Hardcoded string "End-to-End Prediction Time", should use @string resource [HardcodedText]
+        android:text="End-to-End Prediction Time"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/layout/main_activity.xml:180: Warning: Hardcoded string "Inference Time", should use @string resource [HardcodedText]
+        android:text="Inference Time"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 37 warnings

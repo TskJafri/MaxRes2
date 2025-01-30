@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.2" type="incidents">
+
+    <incident
+        id="ScopedStorage"
+        severity="warning"
+        message="The Google Play store has a policy that limits usage of MANAGE_EXTERNAL_STORAGE">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="6"
+            column="36"
+            startOffset="354"
+            endLine="6"
+            endColumn="78"
+            endOffset="396"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="This folder configuration (`v24`) is unnecessary; `minSdkVersion` is 30. Merge all the resources in this folder into `drawable`.">
+        <fix-data file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/drawable-v24" folderName="drawable" requiresApi="30"/>
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/drawable-v24"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Super Resolution&quot;, should use `@string` resource">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/layout/main_activity.xml"
+            line="25"
+            column="13"
+            startOffset="948"
+            endLine="25"
+            endColumn="44"
+            endOffset="979"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Image&quot;, should use `@string` resource">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/layout/main_activity.xml"
+            line="47"
+            column="13"
+            startOffset="1773"
+            endLine="47"
+            endColumn="33"
+            endOffset="1793"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;CPU Only&quot;, should use `@string` resource">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/layout/main_activity.xml"
+            line="82"
+            column="13"
+            startOffset="3076"
+            endLine="82"
+            endColumn="36"
+            endOffset="3099"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;All Hardware&quot;, should use `@string` resource">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/layout/main_activity.xml"
+            line="95"
+            column="13"
+            startOffset="3589"
+            endLine="95"
+            endColumn="40"
+            endOffset="3616"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Run Model&quot;, should use `@string` resource">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/layout/main_activity.xml"
+            line="107"
+            column="9"
+            startOffset="3923"
+            endLine="107"
+            endColumn="33"
+            endOffset="3947"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/layout/main_activity.xml"
+            line="124"
+            column="10"
+            startOffset="4630"
+            endLine="124"
+            endColumn="19"
+            endOffset="4639"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;-- ms&quot;, should use `@string` resource">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/layout/main_activity.xml"
+            line="135"
+            column="9"
+            startOffset="5050"
+            endLine="135"
+            endColumn="29"
+            endOffset="5070"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;-- ms&quot;, should use `@string` resource">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/layout/main_activity.xml"
+            line="148"
+            column="9"
+            startOffset="5637"
+            endLine="148"
+            endColumn="29"
+            endOffset="5657"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;End-to-End Prediction Time&quot;, should use `@string` resource">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/layout/main_activity.xml"
+            line="165"
+            column="9"
+            startOffset="6372"
+            endLine="165"
+            endColumn="50"
+            endOffset="6413"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Inference Time&quot;, should use `@string` resource">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/layout/main_activity.xml"
+            line="180"
+            column="9"
+            startOffset="7002"
+            endLine="180"
+            endColumn="38"
+            endOffset="7031"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="This folder configuration (`v26`) is unnecessary; `minSdkVersion` is 30. Merge all the resources in this folder into `mipmap-anydpi`.">
+        <fix-data file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26" folderName="mipmap-anydpi" requiresApi="30"/>
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive roundIcon is missing a monochrome tag">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher_round.xml"
+            line="2"
+            column="1"
+            startOffset="39"
+            endLine="5"
+            endColumn="17"
+            endOffset="265"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*javaDir*0}/com/quicinc/superresolution/MainActivity.java"
+            line="173"
+            column="39"
+            startOffset="7116"
+            endLine="173"
+            endColumn="46"
+            endOffset="7123"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*javaDir*0}/com/quicinc/superresolution/MainActivity.java"
+            line="174"
+            column="40"
+            startOffset="7165"
+            endLine="174"
+            endColumn="47"
+            endOffset="7172"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*javaDir*0}/com/quicinc/superresolution/MainActivity.java"
+            line="225"
+            column="35"
+            startOffset="8804"
+            endLine="225"
+            endColumn="42"
+            endOffset="8811"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*javaDir*0}/com/quicinc/superresolution/MainActivity.java"
+            line="226"
+            column="36"
+            startOffset="8849"
+            endLine="226"
+            endColumn="43"
+            endOffset="8856"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 30">
+        <fix-data conditional="true"/>
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*javaDir*0}/com/quicinc/superresolution/MainActivity.java"
+            line="269"
+            column="21"
+            startOffset="10605"
+            endLine="269"
+            endColumn="78"
+            endOffset="10662"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*javaDir*0}/com/quicinc/superresolution/MainActivity.java"
+            line="318"
+            column="43"
+            startOffset="13011"
+            endLine="318"
+            endColumn="68"
+            endOffset="13036"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*javaDir*0}/com/quicinc/superresolution/MainActivity.java"
+            line="318"
+            column="63"
+            startOffset="13031"
+            endLine="318"
+            endColumn="68"
+            endOffset="13036"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*javaDir*0}/com/quicinc/superresolution/MainActivity.java"
+            line="319"
+            column="44"
+            startOffset="13082"
+            endLine="319"
+            endColumn="70"
+            endOffset="13108"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*javaDir*0}/com/quicinc/superresolution/MainActivity.java"
+            line="319"
+            column="65"
+            startOffset="13103"
+            endLine="319"
+            endColumn="70"
+            endOffset="13108"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/super_resolution_icon.png` in densityless folder">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/drawable/super_resolution_icon.png"/>
+    </incident>
+
+    <incident
+        id="IconLauncherShape"
+        severity="warning"
+        message="Launcher icons should not fill every pixel of their square region; see the design guide for details">
+        <location
+            file="${:SuperResolution*debug*MAIN*sourceProvider*0*resDir*0}/drawable/super_resolution_icon.png"/>
+    </incident>
+
+</incidents>

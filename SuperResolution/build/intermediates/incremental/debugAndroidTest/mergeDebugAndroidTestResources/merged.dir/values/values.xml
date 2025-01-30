@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tfLiteModelAsset" translatable="false">real_esrgan_x4plus.tflite</string>
+</resources>

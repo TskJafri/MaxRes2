@@ -1,0 +1,29 @@
+{
+  "buildFiles": [
+    "/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/ChatApp/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/taskeenjafri/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/ChatApp/.cxx/Debug/513n6e4b/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/taskeenjafri/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/ChatApp/.cxx/Debug/513n6e4b/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "chatapp::@6890427a1f51a3e7e1df": {
+      "artifactName": "chatapp",
+      "abi": "arm64-v8a",
+      "output": "/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/ChatApp/build/intermediates/cxx/Debug/513n6e4b/obj/arm64-v8a/libchatapp.so",
+      "runtimeFiles": [
+        "/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/ChatApp/.cxx/Debug/513n6e4b/arm64-v8a/-l\u003cPath to local installed QNN SDK root\u003e/lib/aarch64-android/libGenie.so"
+      ]
+    }
+  }
+}

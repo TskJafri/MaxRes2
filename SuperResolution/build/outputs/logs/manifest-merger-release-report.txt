@@ -1,0 +1,351 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:2:1-32:12
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/d19929d11ef051258f6bc8948feb8fec/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:2:1-5:12
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/72bb12e58f16daf78a614e1c7a0b0158/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.material:material:1.12.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4273a884703193f9f1421484a7214681/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/46fabc7db1e67661ed90c0ccca6e0783/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/b496401522056e692cb1bf9bad4ab1d8/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/31d2d226ed88b6530a50422f5e258d6a/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/97cad7fb624bba812ca2cade85c97c00/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:2:1-11:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu-api:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/03f6e2218a431a729fbbbf0a1a485651/transformed/tensorflow-lite-gpu-api-2.16.1/AndroidManifest.xml:2:1-21:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/26df6f6e0eb5fa06602eb3ea494e7516/transformed/tensorflow-lite-gpu-delegate-plugin-0.4.4/AndroidManifest.xml:2:1-6:12
+MERGED from [com.qualcomm.qti:qnn-runtime:2.28.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/331ed876460bb7ac8944e8dc77c15843/transformed/qnn-runtime-2.28.2/AndroidManifest.xml:7:1-14:12
+MERGED from [com.qualcomm.qti:qnn-litert-delegate:2.28.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/15b34366c04a28243ce0d6a57d1376d4/transformed/qnn-litert-delegate-2.28.2/AndroidManifest.xml:11:1-20:12
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/014134c79f39fd29a2e0f91a0d6cf33c/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:2:1-5:12
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/7f3bb1900dae111425d19f8ef27badf3/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/36fbe88f12b8491cfcee6c27e4ff6062/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.5.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/e3405848df1f7325dc6bcd3a526057d3/transformed/fragment-1.5.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.8.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/78709aeb4af4192af916b233efec9bb6/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/d0878ce8565ed80a7529731b4eb94f46/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/e22b773dd3ffe21dbb1fe23d7b90e0ec/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.transition:transition:1.5.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/0d1fce4ac909818b3f89f4486659ff1a/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/2e0a49c025f8e10b0b9db5315f33215c/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/dc8769968dc1b7df057b370cace18fcf/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/5ac20c5d696d80895ee34d66d27153fd/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/8b1248dc1c49d11c3209a00392156e98/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/9744fa8d325c09102c32a260ccc878e2/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4bcd048888a76129b7789ff860b0fe85/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/44d678e78a0f2012dbe36f392c2e417a/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/50631574c640107bc5653a4f491ba1d2/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/69b05fc0215073ffdde9757354d215d5/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/9d1b6662e66fffd0cf1d14187d876ef2/transformed/core-ktx-1.13.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/3f056224f4d39e29c2d4a1040007ec4c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/25aced20f20b35354fa006c8456b45b3/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/bd81b9fa7d5aa634af69a1c793b28910/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/85be2880ab67d1bb6c248dfe35cfc17c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4775a8dc4464953f7d5bc2b8557e7856/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/668d0ed710dea8a42fb4ef79bef92fc1/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/28b373c87267a5a6976c6a5b4d2df1df/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/072586a34cba3c67d8555e84f0c1281f/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/6c0fc72657d971db11bd4eed087b719c/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/8f51504f6af7c43966e11de5d8ba5795/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/65e612c86394311dc91bdfd3bfaa5cc6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/1d2fef342c3caecbe8b063cfc2c30e57/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/3853f79ba75691966661b73ce43634c9/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20510e7b8db12bce2f381520de087444/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/10eabc69d62bb7d4dfa300997242ebeb/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/e58e24a1b5f0845017bd4050c5fdcc4a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/9d1b690783211316510d591ed168ec1e/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/2d541c3863493451847eb98f6d854733/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/34f9b0ca62a02e191d3c00e19ba90690/transformed/image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
+	package
+		INJECTED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:4:5-80
+	android:name
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:4:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:5:22-77
+uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
+ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:6:22-79
+application
+ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:7:1-30:15
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/72bb12e58f16daf78a614e1c7a0b0158/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/72bb12e58f16daf78a614e1c7a0b0158/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.material:material:1.12.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4273a884703193f9f1421484a7214681/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4273a884703193f9f1421484a7214681/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/46fabc7db1e67661ed90c0ccca6e0783/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/46fabc7db1e67661ed90c0ccca6e0783/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/97cad7fb624bba812ca2cade85c97c00/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/97cad7fb624bba812ca2cade85c97c00/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu-api:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/03f6e2218a431a729fbbbf0a1a485651/transformed/tensorflow-lite-gpu-api-2.16.1/AndroidManifest.xml:5:5-19:19
+MERGED from [org.tensorflow:tensorflow-lite-gpu-api:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/03f6e2218a431a729fbbbf0a1a485651/transformed/tensorflow-lite-gpu-api-2.16.1/AndroidManifest.xml:5:5-19:19
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/26df6f6e0eb5fa06602eb3ea494e7516/transformed/tensorflow-lite-gpu-delegate-plugin-0.4.4/AndroidManifest.xml:4:4-5:18
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/26df6f6e0eb5fa06602eb3ea494e7516/transformed/tensorflow-lite-gpu-delegate-plugin-0.4.4/AndroidManifest.xml:4:4-5:18
+MERGED from [com.qualcomm.qti:qnn-litert-delegate:2.28.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/15b34366c04a28243ce0d6a57d1376d4/transformed/qnn-litert-delegate-2.28.2/AndroidManifest.xml:18:5-20
+MERGED from [com.qualcomm.qti:qnn-litert-delegate:2.28.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/15b34366c04a28243ce0d6a57d1376d4/transformed/qnn-litert-delegate-2.28.2/AndroidManifest.xml:18:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/7f3bb1900dae111425d19f8ef27badf3/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/7f3bb1900dae111425d19f8ef27badf3/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4bcd048888a76129b7789ff860b0fe85/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4bcd048888a76129b7789ff860b0fe85/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/65e612c86394311dc91bdfd3bfaa5cc6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/65e612c86394311dc91bdfd3bfaa5cc6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/1d2fef342c3caecbe8b063cfc2c30e57/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/1d2fef342c3caecbe8b063cfc2c30e57/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/34f9b0ca62a02e191d3c00e19ba90690/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/34f9b0ca62a02e191d3c00e19ba90690/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+	android:requestLegacyExternalStorage
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:14:5-48
+	android:extractNativeLibs
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:9:5-37
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:13:5-31
+	android:label
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:11:5-37
+	android:roundIcon
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:12:5-50
+	android:icon
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:10:5-51
+	android:allowBackup
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:8:5-31
+	android:theme
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:15:5-48
+uses-native-library
+ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:17:5-19:36
+	android:required
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:19:9-33
+	android:name
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:18:9-37
+activity#com.quicinc.superresolution.MainActivity
+ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:21:5-29:16
+	android:screenOrientation
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:23:9-45
+	android:exported
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:22:9-32
+	android:name
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:21:15-70
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:25:9-28:25
+action#android.intent.action.MAIN
+ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:26:13-65
+	android:name
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:26:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:27:13-73
+	android:name
+		ADDED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:27:23-70
+uses-sdk
+INJECTED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml
+INJECTED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/d19929d11ef051258f6bc8948feb8fec/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/d19929d11ef051258f6bc8948feb8fec/transformed/tensorflow-lite-support-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/72bb12e58f16daf78a614e1c7a0b0158/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/72bb12e58f16daf78a614e1c7a0b0158/transformed/tensorflow-lite-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [com.google.android.material:material:1.12.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4273a884703193f9f1421484a7214681/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4273a884703193f9f1421484a7214681/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/46fabc7db1e67661ed90c0ccca6e0783/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/46fabc7db1e67661ed90c0ccca6e0783/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/b496401522056e692cb1bf9bad4ab1d8/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/b496401522056e692cb1bf9bad4ab1d8/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/31d2d226ed88b6530a50422f5e258d6a/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/31d2d226ed88b6530a50422f5e258d6a/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/97cad7fb624bba812ca2cade85c97c00/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/97cad7fb624bba812ca2cade85c97c00/transformed/tensorflow-lite-gpu-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [com.qualcomm.qti:qnn-runtime:2.28.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/331ed876460bb7ac8944e8dc77c15843/transformed/qnn-runtime-2.28.2/AndroidManifest.xml:10:5-12:41
+MERGED from [com.qualcomm.qti:qnn-runtime:2.28.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/331ed876460bb7ac8944e8dc77c15843/transformed/qnn-runtime-2.28.2/AndroidManifest.xml:10:5-12:41
+MERGED from [com.qualcomm.qti:qnn-litert-delegate:2.28.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/15b34366c04a28243ce0d6a57d1376d4/transformed/qnn-litert-delegate-2.28.2/AndroidManifest.xml:14:5-16:41
+MERGED from [com.qualcomm.qti:qnn-litert-delegate:2.28.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/15b34366c04a28243ce0d6a57d1376d4/transformed/qnn-litert-delegate-2.28.2/AndroidManifest.xml:14:5-16:41
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/014134c79f39fd29a2e0f91a0d6cf33c/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/014134c79f39fd29a2e0f91a0d6cf33c/transformed/tensorflow-lite-support-api-0.4.4/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/7f3bb1900dae111425d19f8ef27badf3/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-api:2.16.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/7f3bb1900dae111425d19f8ef27badf3/transformed/tensorflow-lite-api-2.16.1/AndroidManifest.xml:6:5-7:38
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/36fbe88f12b8491cfcee6c27e4ff6062/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/36fbe88f12b8491cfcee6c27e4ff6062/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/e3405848df1f7325dc6bcd3a526057d3/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/e3405848df1f7325dc6bcd3a526057d3/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.8.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/78709aeb4af4192af916b233efec9bb6/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/78709aeb4af4192af916b233efec9bb6/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/d0878ce8565ed80a7529731b4eb94f46/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/d0878ce8565ed80a7529731b4eb94f46/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/e22b773dd3ffe21dbb1fe23d7b90e0ec/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/e22b773dd3ffe21dbb1fe23d7b90e0ec/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.transition:transition:1.5.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/0d1fce4ac909818b3f89f4486659ff1a/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/0d1fce4ac909818b3f89f4486659ff1a/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/2e0a49c025f8e10b0b9db5315f33215c/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/2e0a49c025f8e10b0b9db5315f33215c/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/dc8769968dc1b7df057b370cace18fcf/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/dc8769968dc1b7df057b370cace18fcf/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/5ac20c5d696d80895ee34d66d27153fd/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/5ac20c5d696d80895ee34d66d27153fd/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/8b1248dc1c49d11c3209a00392156e98/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/8b1248dc1c49d11c3209a00392156e98/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/9744fa8d325c09102c32a260ccc878e2/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/9744fa8d325c09102c32a260ccc878e2/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4bcd048888a76129b7789ff860b0fe85/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4bcd048888a76129b7789ff860b0fe85/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/44d678e78a0f2012dbe36f392c2e417a/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/44d678e78a0f2012dbe36f392c2e417a/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/50631574c640107bc5653a4f491ba1d2/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/50631574c640107bc5653a4f491ba1d2/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/69b05fc0215073ffdde9757354d215d5/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/69b05fc0215073ffdde9757354d215d5/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/9d1b6662e66fffd0cf1d14187d876ef2/transformed/core-ktx-1.13.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/9d1b6662e66fffd0cf1d14187d876ef2/transformed/core-ktx-1.13.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/3f056224f4d39e29c2d4a1040007ec4c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/3f056224f4d39e29c2d4a1040007ec4c/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/25aced20f20b35354fa006c8456b45b3/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/25aced20f20b35354fa006c8456b45b3/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/bd81b9fa7d5aa634af69a1c793b28910/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/bd81b9fa7d5aa634af69a1c793b28910/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/85be2880ab67d1bb6c248dfe35cfc17c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/85be2880ab67d1bb6c248dfe35cfc17c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4775a8dc4464953f7d5bc2b8557e7856/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4775a8dc4464953f7d5bc2b8557e7856/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/668d0ed710dea8a42fb4ef79bef92fc1/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/668d0ed710dea8a42fb4ef79bef92fc1/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/28b373c87267a5a6976c6a5b4d2df1df/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/28b373c87267a5a6976c6a5b4d2df1df/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/072586a34cba3c67d8555e84f0c1281f/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/072586a34cba3c67d8555e84f0c1281f/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/6c0fc72657d971db11bd4eed087b719c/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/6c0fc72657d971db11bd4eed087b719c/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/8f51504f6af7c43966e11de5d8ba5795/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/8f51504f6af7c43966e11de5d8ba5795/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/65e612c86394311dc91bdfd3bfaa5cc6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/65e612c86394311dc91bdfd3bfaa5cc6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/1d2fef342c3caecbe8b063cfc2c30e57/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/1d2fef342c3caecbe8b063cfc2c30e57/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/3853f79ba75691966661b73ce43634c9/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/3853f79ba75691966661b73ce43634c9/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20510e7b8db12bce2f381520de087444/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20510e7b8db12bce2f381520de087444/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/10eabc69d62bb7d4dfa300997242ebeb/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/10eabc69d62bb7d4dfa300997242ebeb/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/e58e24a1b5f0845017bd4050c5fdcc4a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/e58e24a1b5f0845017bd4050c5fdcc4a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/9d1b690783211316510d591ed168ec1e/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/9d1b690783211316510d591ed168ec1e/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/2d541c3863493451847eb98f6d854733/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/2d541c3863493451847eb98f6d854733/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/34f9b0ca62a02e191d3c00e19ba90690/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/34f9b0ca62a02e191d3c00e19ba90690/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/AndroidManifest.xml:2:1-32:12 reason: org.tensorflow.lite.gpu.api has a targetSdkVersion < 4
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4bcd048888a76129b7789ff860b0fe85/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4bcd048888a76129b7789ff860b0fe85/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/1d2fef342c3caecbe8b063cfc2c30e57/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/1d2fef342c3caecbe8b063cfc2c30e57/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/09958605fdfe95e861ed4dcce2db9e96/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4bcd048888a76129b7789ff860b0fe85/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4bcd048888a76129b7789ff860b0fe85/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/4bcd048888a76129b7789ff860b0fe85/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+permission#com.quicinc.superresolution.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+uses-permission#com.quicinc.superresolution.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.0] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/20d05a58e79b80cde4c99b6c5dc4bd63/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/taskeenjafri/.gradle/caches/8.12.1/transforms/70c3ea006b0c9f284217f6299a99806e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92

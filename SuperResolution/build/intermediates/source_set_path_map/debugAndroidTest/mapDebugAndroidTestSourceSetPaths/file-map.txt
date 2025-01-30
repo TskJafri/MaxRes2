@@ -1,0 +1,4 @@
+com.quicinc.superresolution.test.SuperResolution-androidTest-0 /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/generated/res/resValues/androidTest/debug
+com.quicinc.superresolution.test.SuperResolution-mergeDebugAndroidTestResources-1 /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.quicinc.superresolution.test.SuperResolution-mergeDebugAndroidTestResources-2 /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.quicinc.superresolution.test.SuperResolution-debugAndroidTest-3 /Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

@@ -1,0 +1,4 @@
+#Tue Jan 28 19:50:01 MST 2025
+base.0=/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex

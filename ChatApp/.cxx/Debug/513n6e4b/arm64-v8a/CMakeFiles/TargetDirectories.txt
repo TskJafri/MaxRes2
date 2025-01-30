@@ -1,0 +1,3 @@
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/ChatApp/.cxx/Debug/513n6e4b/arm64-v8a/CMakeFiles/chatapp.dir
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/ChatApp/.cxx/Debug/513n6e4b/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/ChatApp/.cxx/Debug/513n6e4b/arm64-v8a/CMakeFiles/rebuild_cache.dir

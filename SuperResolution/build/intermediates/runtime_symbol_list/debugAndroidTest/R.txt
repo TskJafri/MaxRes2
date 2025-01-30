@@ -1,0 +1,1 @@
+int string tfLiteModelAsset 0x7f010000
