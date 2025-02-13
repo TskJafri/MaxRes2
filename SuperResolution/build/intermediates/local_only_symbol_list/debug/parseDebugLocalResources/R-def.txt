@@ -17,6 +17,7 @@ id appTitleCard
 id cpuOnlyRadio
 id defaultDelegateRadio
 id delegateSelectionGroup
+id downloadButton
 id imageSelector
 id imageSelectorCard
 id imageSelectorText

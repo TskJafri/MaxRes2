@@ -5,13 +5,17 @@
 package com.quicinc.superresolution;
 
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.ImageDecoder;
+import android.graphics.Matrix;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.MediaStore;
@@ -24,6 +28,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultLauncher;
@@ -34,6 +39,7 @@ import com.quicinc.ImageProcessing;
 import com.quicinc.tflite.AIHubDefaults;
 
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.InputStream;
 import java.security.NoSuchAlgorithmException;
 import java.text.DecimalFormat;
@@ -53,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
     TextView predictionTimeView;
     Spinner imageSelector;
     Button predictionButton;
+    Button downloadButton;
     ActivityResultLauncher<Intent> selectImageResultLauncher;
     private final String fromGalleryImageSelectorOption = "From Gallery";
     private final String notSelectedImageSelectorOption = "Not Selected";
@@ -94,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
         inferenceTimeView = (TextView)findViewById(R.id.inferenceTimeResultText);
         predictionTimeView = (TextView)findViewById(R.id.predictionTimeResultText);
         predictionButton = (Button)findViewById(R.id.runModelButton);
+        downloadButton = findViewById(R.id.downloadButton);
+        downloadButton.setOnClickListener(view -> downloadCurrentImage());
 
         // Setup Image Selector Dropdown
         ArrayAdapter ad = new ArrayAdapter(this, android.R.layout.simple_spinner_item, imageSelectorOptions);
@@ -153,7 +162,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Setup button callback
-        predictionButton.setOnClickListener((view) -> updatePredictionDataAsync());
+        predictionButton.setOnClickListener((view) -> {
+            if (defaultDelegateUpscaler != null || cpuOnlyUpscaler != null) {
+                updatePredictionDataAsync();
+            } else {
+                Toast.makeText(this, "Model is not yet loaded. Please wait.", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         // Exit the UI thread and instantiate the model in the background.
         createTFLiteUpscalerAsync();
@@ -240,8 +255,8 @@ public class MainActivity extends AppCompatActivity {
             try (InputStream inputImage = getAssets().open("images/" + imagePath)) {
                 selectedImage = BitmapFactory.decodeStream(inputImage);
                 // Downscale the image to the size the model supports.
-                int[] inputSize = defaultDelegateUpscaler.getInputWidthHeight();
-                selectedImage = ImageProcessing.resizeAndPadMaintainAspectRatio(selectedImage, inputSize[0], inputSize[1], 0xFF);
+                //int[] inputSize = defaultDelegateUpscaler.getInputWidthHeight();
+                //selectedImage = ImageProcessing.resizeAndPadMaintainAspectRatio(selectedImage, inputSize[0], inputSize[1], 0xFF);
             } catch (IOException e) {
                 throw new RuntimeException(e.getMessage());
             }
@@ -274,8 +289,8 @@ public class MainActivity extends AppCompatActivity {
                     selectedImage = MediaStore.Images.Media.getBitmap(getContentResolver(), imageUri);
                 }
                 // Downscale the image to the size the model supports.
-                int[] inputSize = defaultDelegateUpscaler.getInputWidthHeight();
-                selectedImage = ImageProcessing.resizeAndPadMaintainAspectRatio(selectedImage, inputSize[0], inputSize[1], 0xFF);
+                //int[] inputSize = defaultDelegateUpscaler.getInputWidthHeight();
+                //selectedImage = ImageProcessing.resizeAndPadMaintainAspectRatio(selectedImage, inputSize[0], inputSize[1], 0xFF);
             } catch (IOException e) {
                 throw new RuntimeException(e.getMessage());
             }
@@ -289,37 +304,99 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Run the upscaler on the currently selected image.
+     * Run the super resolution model on the currently selected image with tiling.
      * Prediction will run asynchronously to the main UI thread.
      * Disables inference UI before inference and re-enables it afterwards.
      */
     void updatePredictionDataAsync() {
         setInferenceUIEnabled(false);
 
-        SuperResolution imageClassification;
+        SuperResolution superResolution;
         if (cpuOnlyClassification) {
-            imageClassification = cpuOnlyUpscaler;
+            superResolution = cpuOnlyUpscaler;
         } else {
-            imageClassification = defaultDelegateUpscaler;
+            superResolution = defaultDelegateUpscaler;
         }
 
         // Exit the main UI thread and execute the model in the background.
         backgroundTaskExecutor.execute(() -> {
             // Background task
-            Bitmap result = imageClassification.generateUpscaledImage(selectedImage);
-            long inferenceTime = imageClassification.getLastInferenceTime();
-            long predictionTime = imageClassification.getLastPostprocessingTime() + inferenceTime + imageClassification.getLastPreprocessingTime();
+            Bitmap result = superResolution.processImageWithTiling(selectedImage);
+            long inferenceTime = superResolution.getLastInferenceTime();
+            long predictionTime = superResolution.getLastPostprocessingTime() + inferenceTime + superResolution.getLastPreprocessingTime();
             String inferenceTimeText = timeFormatter.format((double) inferenceTime / 1000000);
             String predictionTimeText = timeFormatter.format((double) predictionTime / 1000000);
 
+            // Scale down the result image if it's too large
+            int maxWidth = 4000;
+            int maxHeight = 4000;
+            Bitmap scaledResult = result;
+            if (result.getWidth() > maxWidth || result.getHeight() > maxHeight) {
+                float scale = Math.min((float) maxWidth / result.getWidth(), (float) maxHeight / result.getHeight());
+                Matrix matrix = new Matrix();
+                matrix.postScale(scale, scale);
+                scaledResult = Bitmap.createBitmap(result, 0, 0, result.getWidth(), result.getHeight(), matrix, true);
+                result.recycle();
+            }
+
+            final Bitmap finalResult = scaledResult;
+
             mainLooperHandler.post(() -> {
                 // In main UI thread
-                selectedImageView.setImageBitmap(result);
+                selectedImageView.setImageBitmap(finalResult);
                 inferenceTimeView.setText(inferenceTimeText + " ms");
                 predictionTimeView.setText(predictionTimeText + " ms");
                 setInferenceUIEnabled(true);
             });
         });
+    }
+
+    /**
+     * Save the currently displayed image to the device's gallery.
+     */
+    private void downloadCurrentImage() {
+        Bitmap displayedImage = ((BitmapDrawable) selectedImageView.getDrawable()).getBitmap();
+        if (displayedImage == null) {
+            Toast.makeText(this, "No image to download", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Save the image to the device's gallery
+        String savedImagePath = saveImageToGallery(displayedImage);
+        if (savedImagePath != null) {
+            Toast.makeText(this, "Image saved to gallery", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "Failed to save image", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    /**
+     * Save the given image to the device's gallery.
+     *
+     * @param image The image to save.
+     * @return The path to the saved image, or null if the save failed.
+     */
+    private String saveImageToGallery(Bitmap image) {
+        String savedImagePath = null;
+        String imageFileName = "SuperResolutionImage_" + System.currentTimeMillis() + ".png";
+        ContentValues values = new ContentValues();
+        values.put(MediaStore.Images.Media.DISPLAY_NAME, imageFileName);
+        values.put(MediaStore.Images.Media.MIME_TYPE, "image/png");
+        values.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/SuperResolutionImages");
+
+        Uri uri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+        if (uri != null) {
+            try (OutputStream outputStream = getContentResolver().openOutputStream(uri)) {
+                if (outputStream != null) {
+                    image.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
+                    savedImagePath = uri.toString();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return savedImagePath;
     }
 
     /**

@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/taskeenjafri/Projects/AIOptimizer/ai-hub-apps/apps/android/SuperResolution/src/main/res/values-night/themes.xml",
+                    "source": "/Users/taskeenjafri/Projects/MaxRes/SuperResolution/src/main/res/values-night/themes.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",

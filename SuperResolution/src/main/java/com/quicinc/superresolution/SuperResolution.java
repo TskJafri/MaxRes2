@@ -8,6 +8,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.util.Log;
 import android.util.Pair;
+import android.graphics.Canvas;
 
 import com.quicinc.ImageProcessing;
 import com.quicinc.tflite.AIHubDefaults;
@@ -170,14 +171,19 @@ public class SuperResolution implements AutoCloseable {
         Bitmap resizedImg;
 
         // Resize input image
+        Log.d(TAG, "Original image size: " + image.getWidth() + "x" + image.getHeight());
+        Log.d(TAG, "Model input size: " + inputShape[1] + "x" + inputShape[2]);
+
         if (image.getHeight() > inputShape[1] || image.getWidth() > inputShape[2]) {
             // This image is larger than the model's desired input size.
             // While this app could easily resize the large image to fit, that defeats the purpose of super resolution.
             throw new RuntimeException("Input image is too big for this model. Expected Width of " + inputShape[1] + " and Height of " + inputShape[2]);
         } else if (image.getHeight() != inputShape[1] || image.getWidth() != inputShape[2]) {
             resizedImg = ImageProcessing.resizeAndPadMaintainAspectRatio(image, inputShape[1], inputShape[2], 0xFF);
+            Log.d(TAG, "Image resized to: " + resizedImg.getWidth() + "x" + resizedImg.getHeight());
         } else {
             resizedImg = image;
+            Log.d(TAG, "Image does not need resizing.");
         }
 
         // Convert type and fill input buffer
@@ -195,7 +201,6 @@ public class SuperResolution implements AutoCloseable {
 
         return new ByteBuffer[] {inputBuffer};
     }
-
 
     /**
      * Reads the output buffer on tfLiteModel and processes it into a readable output image.
@@ -233,6 +238,55 @@ public class SuperResolution implements AutoCloseable {
         tfLiteInterpreter.runForMultipleInputsOutputs(inputs, outputBindings);
 
         // Postprocessing: Compute top K indices and convert to labels
-        return postprocess();
+        Bitmap output = postprocess();
+        Log.d(TAG, "Postprocessed tile size: " + output.getWidth() + "x" + output.getHeight());
+
+        return output;
+    }
+
+    /**
+     * Overlay a bitmap onto another bitmap at the specified position.
+     *
+     * @param baseBitmap The base bitmap.
+     * @param overlayBitmap The bitmap to overlay.
+     * @param x The x position to overlay the bitmap.
+     * @param y The y position to overlay the bitmap.
+     * @return The combined bitmap.
+     */
+    private Bitmap overlayBitmap(Bitmap baseBitmap, Bitmap overlayBitmap, int x, int y) {
+        Bitmap resultBitmap = baseBitmap.copy(baseBitmap.getConfig(), true);
+        Canvas canvas = new Canvas(resultBitmap);
+        canvas.drawBitmap(overlayBitmap, x, y, null);
+        return resultBitmap;
+    }
+
+    /**
+     * Process the provided input image with tiling.
+     *
+     * @param image RGBA-8888 bitmap image to process.
+     * @return Processed image, in RGBA-8888 format.
+     */
+    public Bitmap processImageWithTiling(Bitmap image) {
+        int tileSize = 128;
+        int upscaleFactor = 4; // Assuming the model upscales by a factor of 4
+        int width = image.getWidth() * upscaleFactor;
+        int height = image.getHeight() * upscaleFactor;
+        Bitmap resultImage = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(resultImage);
+
+        for (int y = 0; y < image.getHeight(); y += tileSize) {
+            for (int x = 0; x < image.getWidth(); x += tileSize) {
+                int tileWidth = Math.min(tileSize, image.getWidth() - x);
+                int tileHeight = Math.min(tileSize, image.getHeight() - y);
+                Bitmap tile = Bitmap.createBitmap(image, x, y, tileWidth, tileHeight);
+                Bitmap resizedTile = ImageProcessing.resizeAndPadMaintainAspectRatio(tile, inputShape[1], inputShape[2], 0xFF);
+                Bitmap processedTile = generateUpscaledImage(resizedTile);
+                canvas.drawBitmap(processedTile, x * upscaleFactor, y * upscaleFactor, null);
+                processedTile.recycle();
+                tile.recycle();
+                resizedTile.recycle();
+            }
+        }
+        return resultImage;
     }
 }
