@@ -3385,6 +3385,7 @@ id matrix
 id message
 id middle
 id mini
+id modelLoadingProgress
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle

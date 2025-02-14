@@ -130,6 +130,13 @@
             android:src="@drawable/ic_launcher_background" />
     </androidx.cardview.widget.CardView>
 
+    <ProgressBar
+    android:id="@+id/modelLoadingProgress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:visibility="gone" />
+    
     <TextView
         android:id="@+id/inferenceTimeResultText"
         android:layout_width="wrap_content"

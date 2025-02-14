@@ -23,6 +23,7 @@ id imageSelectorCard
 id imageSelectorText
 id inferenceTimeResultText
 id inferenceTimeText
+id modelLoadingProgress
 id predictionTimeResultText
 id predictionTimeText
 id runModelButton

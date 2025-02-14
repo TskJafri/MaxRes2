@@ -260,6 +260,23 @@ public class SuperResolution implements AutoCloseable {
         return resultBitmap;
     }
 
+    private Bitmap padToSquare(Bitmap original) {
+        int width = original.getWidth();
+        int height = original.getHeight();
+        int size = Math.max(width, height);
+        
+        Bitmap paddedBitmap = Bitmap.createBitmap(size, size, original.getConfig());
+        Canvas canvas = new Canvas(paddedBitmap);
+        canvas.drawBitmap(original, 0, 0, null);
+        return paddedBitmap;
+    }
+
+    private Bitmap cropToOriginalRatio(Bitmap processed, int originalWidth, int originalHeight, int upscaleFactor) {
+        int targetWidth = originalWidth * upscaleFactor;
+        int targetHeight = originalHeight * upscaleFactor;
+        return Bitmap.createBitmap(processed, 0, 0, targetWidth, targetHeight);
+    }
+
     /**
      * Process the provided input image with tiling.
      *
@@ -267,26 +284,51 @@ public class SuperResolution implements AutoCloseable {
      * @return Processed image, in RGBA-8888 format.
      */
     public Bitmap processImageWithTiling(Bitmap image) {
-        int tileSize = 128;
-        int upscaleFactor = 4; // Assuming the model upscales by a factor of 4
-        int width = image.getWidth() * upscaleFactor;
-        int height = image.getHeight() * upscaleFactor;
-        Bitmap resultImage = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        // Create a copy of the source image to prevent recycling issues
+        Bitmap sourceBitmap = image.copy(image.getConfig(), true);
+        
+        final int TILE_SIZE = 128;  // Model requires square input
+        final int OVERLAP = 32;
+        final int UPSCALE_FACTOR = 4;
+        
+        int inputWidth = sourceBitmap.getWidth();
+        int inputHeight = sourceBitmap.getHeight();
+        int outputWidth = inputWidth * UPSCALE_FACTOR;
+        int outputHeight = inputHeight * UPSCALE_FACTOR;
+        
+        Bitmap resultImage = Bitmap.createBitmap(outputWidth, outputHeight, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(resultImage);
 
-        for (int y = 0; y < image.getHeight(); y += tileSize) {
-            for (int x = 0; x < image.getWidth(); x += tileSize) {
-                int tileWidth = Math.min(tileSize, image.getWidth() - x);
-                int tileHeight = Math.min(tileSize, image.getHeight() - y);
-                Bitmap tile = Bitmap.createBitmap(image, x, y, tileWidth, tileHeight);
-                Bitmap resizedTile = ImageProcessing.resizeAndPadMaintainAspectRatio(tile, inputShape[1], inputShape[2], 0xFF);
-                Bitmap processedTile = generateUpscaledImage(resizedTile);
-                canvas.drawBitmap(processedTile, x * upscaleFactor, y * upscaleFactor, null);
-                processedTile.recycle();
+        // Process the image in square tiles
+        for (int y = 0; y < inputHeight; y += TILE_SIZE - OVERLAP) {
+            for (int x = 0; x < inputWidth; x += TILE_SIZE - OVERLAP) {
+                // Calculate tile dimensions
+                int tileWidth = Math.min(TILE_SIZE, inputWidth - x);
+                int tileHeight = Math.min(TILE_SIZE, inputHeight - y);
+                
+                // Extract tile
+                Bitmap tile = Bitmap.createBitmap(sourceBitmap, x, y, tileWidth, tileHeight);
+                
+                // Pad tile to square
+                Bitmap squareTile = padToSquare(tile);
                 tile.recycle();
-                resizedTile.recycle();
+                
+                // Process square tile
+                Bitmap processedSquareTile = generateUpscaledImage(squareTile);
+                squareTile.recycle();
+                
+                // Crop back to original ratio
+                Bitmap processedTile = cropToOriginalRatio(processedSquareTile, tileWidth, tileHeight, UPSCALE_FACTOR);
+                processedSquareTile.recycle();
+                
+                // Draw processed tile
+                canvas.drawBitmap(processedTile, x * UPSCALE_FACTOR, y * UPSCALE_FACTOR, null);
+                
+                processedTile.recycle();
             }
         }
+        
+        sourceBitmap.recycle();
         return resultImage;
     }
 }

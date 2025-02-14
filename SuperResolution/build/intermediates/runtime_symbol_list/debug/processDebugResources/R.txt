@@ -3384,6 +3384,7 @@ int id matrix 0x7f080114
 int id message 0x7f080115
 int id middle 0x7f080116
 int id mini 0x7f080117
+int id modelLoadingProgress 0x7f080204
 int id month_grid 0x7f080118
 int id month_navigation_bar 0x7f080119
 int id month_navigation_fragment_toggle 0x7f08011a

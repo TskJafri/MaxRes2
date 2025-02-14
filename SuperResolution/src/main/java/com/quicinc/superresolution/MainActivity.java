@@ -308,6 +308,28 @@ public class MainActivity extends AppCompatActivity {
      * Prediction will run asynchronously to the main UI thread.
      * Disables inference UI before inference and re-enables it afterwards.
      */
+    private Bitmap scaleDownBitmapForDisplay(Bitmap bitmap) {
+        // Calculate bitmap size in bytes (4 bytes per pixel for ARGB_8888)
+        int bitmapSizeBytes = bitmap.getWidth() * bitmap.getHeight() * 4;
+        
+        // Max size ~50MB to be safe (Android typically limits bitmaps to 100MB)
+        final int MAX_BITMAP_SIZE = 50 * 1024 * 1024;
+        
+        if (bitmapSizeBytes > MAX_BITMAP_SIZE) {
+            // Calculate scale factor to get under max size
+            double scaleFactor = Math.sqrt((double) MAX_BITMAP_SIZE / bitmapSizeBytes);
+            int targetWidth = (int) (bitmap.getWidth() * scaleFactor);
+            int targetHeight = (int) (bitmap.getHeight() * scaleFactor);
+            
+            Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap, targetWidth, targetHeight, true);
+            if (bitmap != scaledBitmap) {
+                bitmap.recycle();
+            }
+            return scaledBitmap;
+        }
+        return bitmap;
+    }
+
     void updatePredictionDataAsync() {
         setInferenceUIEnabled(false);
 
@@ -321,33 +343,29 @@ public class MainActivity extends AppCompatActivity {
         // Exit the main UI thread and execute the model in the background.
         backgroundTaskExecutor.execute(() -> {
             // Background task
-            Bitmap result = superResolution.processImageWithTiling(selectedImage);
-            long inferenceTime = superResolution.getLastInferenceTime();
-            long predictionTime = superResolution.getLastPostprocessingTime() + inferenceTime + superResolution.getLastPreprocessingTime();
-            String inferenceTimeText = timeFormatter.format((double) inferenceTime / 1000000);
-            String predictionTimeText = timeFormatter.format((double) predictionTime / 1000000);
+            try {
+                Bitmap result = superResolution.processImageWithTiling(selectedImage);
+                long inferenceTime = superResolution.getLastInferenceTime();
+                long predictionTime = superResolution.getLastPostprocessingTime() + inferenceTime + superResolution.getLastPreprocessingTime();
+                String inferenceTimeText = timeFormatter.format((double) inferenceTime / 1000000);
+                String predictionTimeText = timeFormatter.format((double) predictionTime / 1000000);
 
-            // Scale down the result image if it's too large
-            int maxWidth = 4000;
-            int maxHeight = 4000;
-            Bitmap scaledResult = result;
-            if (result.getWidth() > maxWidth || result.getHeight() > maxHeight) {
-                float scale = Math.min((float) maxWidth / result.getWidth(), (float) maxHeight / result.getHeight());
-                Matrix matrix = new Matrix();
-                matrix.postScale(scale, scale);
-                scaledResult = Bitmap.createBitmap(result, 0, 0, result.getWidth(), result.getHeight(), matrix, true);
-                result.recycle();
+                // Scale down the result image for display
+                final Bitmap displayBitmap = scaleDownBitmapForDisplay(result);
+
+                mainLooperHandler.post(() -> {
+                    // In main UI thread
+                    selectedImageView.setImageBitmap(displayBitmap);
+                    inferenceTimeView.setText(inferenceTimeText + " ms");
+                    predictionTimeView.setText(predictionTimeText + " ms");
+                    setInferenceUIEnabled(true);
+                });
+            } catch (Exception e) {
+                mainLooperHandler.post(() -> {
+                    Toast.makeText(this, "Error processing image: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                    setInferenceUIEnabled(true);
+                });
             }
-
-            final Bitmap finalResult = scaledResult;
-
-            mainLooperHandler.post(() -> {
-                // In main UI thread
-                selectedImageView.setImageBitmap(finalResult);
-                inferenceTimeView.setText(inferenceTimeText + " ms");
-                predictionTimeView.setText(predictionTimeText + " ms");
-                setInferenceUIEnabled(true);
-            });
         });
     }
 
